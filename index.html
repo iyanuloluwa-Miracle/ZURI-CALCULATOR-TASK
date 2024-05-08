@@ -14,28 +14,28 @@
                     <td colspan="4"><input type="text" placeholder="0" id="inputBox"></td>
                 </tr>
                 <tr>
-                    <td><button>7</button></td>
-                    <td><button>8</button></td>
-                    <td><button>9</button></td>
-                    <td><button class="main">/</button></td>
+                    <td><button onclick="appendValue('7')">7</button></td>
+                    <td><button onclick="appendValue('8')">8</button></td>
+                    <td><button onclick="appendValue('9')">9</button></td>
+                    <td><button class="main" onclick="appendOperator('/')">/</button></td>
                 </tr>
                 <tr>
-                    <td><button>4</button></td>
-                    <td><button>5</button></td>
-                    <td><button>6</button></td>
-                    <td><button class="main">X</button></td>
+                    <td><button onclick="appendValue('4')">4</button></td>
+                    <td><button onclick="appendValue('5')">5</button></td>
+                    <td><button onclick="appendValue('6')">6</button></td>
+                    <td><button onclick="appendOperator('*')" class="main">X</button></td>
                 </tr>
                 <tr>
-                    <td><button>1</button></td>
-                    <td><button>2</button></td>
-                    <td><button>3</button></td>
-                    <td><button class="main">-</button></td>
+                    <td><button onclick="appendValue('1')">1</button></td>
+                    <td><button onclick="appendValue('2')">2</button></td>
+                    <td><button onclick="appendValue('3')">3</button></td>
+                    <td><button onclick="appendOperator('-')" class="main">-</button></td>
                 </tr>
                 <tr>
-                    <td><button>0</button></td>
-                    <td><button class="main">.</button></td>
-                    <td><button class="main">+</button></td>
-                    <td><button class="equal main">=</button></td>
+                    <td><button onclick="appendValue('0')">0</button></td>
+                    <td><button onclick="appendDecimal()" class="main">.</button></td>
+                    <td><button onclick="appendOperator('+')" class="main">+</button></td>
+                    <td><button onclick="calculate()" class="equal main">=</button></td>
                 </tr>
             </table>
         </div>
